@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 87a0be8d774819642acdd0f0c74888df
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scoreText: {instanceID: 0}
+  - losePanel: {instanceID: 0}
+  - sfxLose: {fileID: 8300000, guid: bd9f678a1dc1fb94a857fb4b7698aa46, type: 3}
+  - sfxWin: {instanceID: 0}
+  - sfxCoin: {fileID: 8300000, guid: 62bf47399c0b17b419ba0527350aefbb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
