@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 enum GameState { Error, Menu, Play, Paused, Win, Lose};
@@ -31,7 +28,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Make sure user is on Android platform
+        if (Application.platform == RuntimePlatform.Android && Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     public void AddScore(int value)

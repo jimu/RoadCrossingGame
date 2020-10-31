@@ -42,15 +42,10 @@ public class Player : MonoBehaviour
     {
         if (GameManager.instance.IsPlaying())
         {
-            anim.enabled = transform.position != targetPosition;
-            footsteps.mute = !anim.enabled;
-            /*        
-                if (footsteps.isPlaying && !anim.enabled)
-                    footsteps.Stop();
-                else if (!footsteps.isPlaying && anim.enabled)
-                    footsteps.Play();
-            */
-            if (anim.enabled)
+            bool moving = transform.position != targetPosition;
+            anim.enabled = moving;
+            footsteps.mute = !moving;
+            if (moving)
                 transform.position = Vector3.Lerp(currentPosition, targetPosition, (Time.time - startTime) * speed);
             else
                 currentPosition = targetPosition;
@@ -72,6 +67,7 @@ public class Player : MonoBehaviour
             GameManager.instance.Lose();
             gameObject.SetActive(false);
         }
+
 
     }
 }
