@@ -12,6 +12,6 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = new Vector3(0, target.position.y, -10); // default camera is z=-10;
+        transform.position = new Vector3(0, target.position.y + 3, -10); // default camera is z=-10;
     }
 }

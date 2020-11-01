@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "824929476279",
+    "firebase_url": "https://pumpkin-spider.firebaseio.com",
+    "project_id": "pumpkin-spider",
+    "storage_bucket": "pumpkin-spider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824929476279:android:2b316676b923af49283732",
+        "android_client_info": {
+          "package_name": "com.TriplePlusUngood.com.PumpkinSpiderCrossesTheRoad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824929476279-54c40tj8r96ja5lbtiso0rko0ro0ushu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTGq0UdfB2V2KH7MdsxHzqXoBzcKgBKG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824929476279-54c40tj8r96ja5lbtiso0rko0ro0ushu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "824929476279-ok7ub9ldu40sjcvjcupvb3i1ffbo5mve.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.TriplePlusUngood.PumpkinSiderCrossesTheRoad"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
