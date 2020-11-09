@@ -2,6 +2,7 @@
   "dependencies": {
     "com.google.firebase.analytics": "6.16.1",
     "com.google.firebase.app": "6.16.1",
+    "com.google.firebase.database": "6.16.1",
     "com.unity.2d.animation": "3.2.5",
     "com.unity.2d.pixel-perfect": "2.0.4",
     "com.unity.2d.psdimporter": "2.1.6",

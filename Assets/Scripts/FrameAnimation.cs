@@ -8,6 +8,7 @@ public class FrameAnimation : MonoBehaviour
 {
     [SerializeField] int frameRate = 6; // inspector
     [SerializeField] Sprite[] frames;
+
     SpriteRenderer spriteRenderer;
     int currentFrame = -1;
     int numFrames;

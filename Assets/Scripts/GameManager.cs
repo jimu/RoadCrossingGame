@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 enum GameState { Error, Menu, Play, Paused, Win, Lose};
 
@@ -10,21 +11,32 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     int score;
     GameState state;
-    [SerializeField] UnityEngine.UI.Text scoreText;
+    [SerializeField] Text scoreText;
     [SerializeField] GameObject losePanel;
     [SerializeField] GameObject winPanel;
     AudioSource audioSource;
     [SerializeField] AudioClip sfxLose, sfxWin, sfxCoin, sfxClick;
-
+    [SerializeField] Text status;
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         instance = this;
+        SetStatus("Initializing");
+    }
+
+    void Start()
+    {
         SetScore(0);
         SetGameState(GameState.Play);
         audioSource = GetComponent<AudioSource>();
     }
 
+
+    public void SetStatus(string text)
+    {
+        status.text = text;
+    }
     // Update is called once per frame
     void Update()
     {
